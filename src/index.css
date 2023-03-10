@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Rajdhani&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&family=Rajdhani:wght@300;400;700&family=Righteous&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,9 +20,26 @@
 
     background-image: linear-gradient( 95deg,  rgb(43, 18, 90) 20.2%, rgba(198,55,160,1) 138.2% );
     background-size: 100%;
+
+    /* background-image: url('./img/site-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.bg-about{
+    background-image: url('./img/yo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: lighten;
+    /* border-radius: 50%; */
+}
+html,body{
+    overflow-x: hidden;
+}
+body{
+    position: static;
 }
 .is-active{
-    background-image: linear-gradient(to right, #e042b1,#5FC3E4,#E55D87);
+    background-image: linear-gradient(to right, #5FC3E4,#E55D87);
     padding: 5px;
     border-radius: 10px;
 }
@@ -32,11 +49,15 @@
         @apply h-screen flex items-center lg:p-8 p-4
     }
     .btn{
-        @apply m-[10px] lg:py-[10px] lg:px-[30px] text-center uppercase bg-btn text-white rounded-[40px] block py-[10px] px-[20px] hover:bg-btnhover hover:no-underline transition-all text-sm lg:text-lg hover:tracking-wider
+        @apply m-[10px] lg:py-[10px] lg:px-[30px] text-center uppercase bg-btn text-white rounded-[40px] block py-[10px] px-[20px] hover:bg-btnhover hover:no-underline transition-all text-sm lg:text-lg hover:tracking-wider m-0
     }
 
     .gradient{
         @apply bg-gradient-to-r from-[#e042b1] via-[#5FC3E4] to-[#E55D87]
+    }
+
+    .gradient-text{
+        @apply bg-gradient-to-r from-[#5FC3E4] to-[#E55D87] text-transparent bg-clip-text
     }
     
     .onhover{
