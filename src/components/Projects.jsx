@@ -2,6 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { fade } from '../utils/variants'
 import { useState } from 'react'
+import PROJECT1 from './../img/project1.webp'
+import PROJECT2 from './../img/project2.webp'
+import PROJECT3 from './../img/project3.webp'
 
 function Projects() {
 
@@ -51,7 +54,7 @@ function Projects() {
             effect.map((img,index) => (
               <motion.div key={index} variants={fade(animationDir[index].dir, animationDir[index].speed)} initial={"init"} whileInView={"view"} className='relative max-w-[450px] mx-auto'>
                 <div className='overflow-hidden border-2 border-[#2B125A] rounded-[20px]'>
-                  <img className='hover:brightness-[.3] transition-all hover:scale-[1.15] rounded-[20px]' src={`/src/img/project${index+1}.webp`} onMouseOver={()=> handleChangeOver(index)} onMouseOut={()=> handleChangeOut(index)}>
+                  <img className='hover:brightness-[.3] transition-all hover:scale-[1.15] rounded-[20px]' src={index == 0 ? PROJECT1 : index == 1 ? PROJECT2 : PROJECT3} onMouseOver={()=> handleChangeOver(index)} onMouseOut={()=> handleChangeOut(index)}>
                   </img>
                 </div>
                 {effect[index] ? <motion.p initial={{opacity:0, y:20}} whileInView={{opacity:1, y:0}} transition={{duration: 1}} className='absolute bottom-[20px] gradient-text left-3 font-secondary font-bold text-2xl'>{worksData[index]}</motion.p> : null}
