@@ -9,7 +9,7 @@ import Projects from './components/Projects'
 function App() {
 
   return (
-    <div className='bgsome'>
+    <div className='bg-base'>
       <Header></Header>
       <Navbar></Navbar>
       <Home></Home>

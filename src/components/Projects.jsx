@@ -40,7 +40,7 @@ function Projects() {
 
   return (
     <div className='section' id='projects'>
-      <div className='container mx-auto max-w-[1200px]'>
+      <div className='container mx-auto max-w-[1200px] max-h-full'>
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-10'>
           <motion.div className='text-center lg:text-left max-w-[400px] mx-auto' variants={fade("right", 1.1)} initial={"init"} whileInView={"view"}>
             <h2 className='font-primary text-[#9b33cc] text-4xl uppercase'>Mis últimos proyectos</h2>

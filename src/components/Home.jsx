@@ -16,7 +16,7 @@ function Home() {
           </motion.h2>
           <motion.div variants={fade("up", 1.3)} initial={"init"} whileInView={"view"}>
             <div  className='flex lg:justify-start justify-center items-center mt-6 mb-2 lg:mt-4 lg:mb-4 uppercase font-primary'>
-              <h3 className='text-4xl'>
+              <h3 className='text-3xl'>
                 Soy
               </h3>
               <TypeAnimation
@@ -31,7 +31,7 @@ function Home() {
                 wrapper="span"
                 cursor={true}
                 repeat={Infinity}
-                className='text-4xl ml-3 font-bold text-[#e042b1]'
+                className='text-3xl ml-3 font-bold text-[#e042b1]'
               />
             </div >
             <p className='text-2xl mt-6 lg:my-0 font-tertiary font-light'>
