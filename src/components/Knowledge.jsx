@@ -4,8 +4,8 @@ import { RiEnglishInput } from 'react-icons/ri'
 
 function Knowledge() {
   return (
-    <div className='section my-[150px]' id='knowledge'>
-      <div className='container max-w-[1200px] mx-auto max-h-full'>
+    <div className='section' id='knowledge'>
+      <div className='container max-w-[1200px] mx-auto'>
       <div className=''>
             <svg width="0" height="0">
               <linearGradient id="base-gradient" x1="100%" y1="100%" x2="0%" y2="0%">

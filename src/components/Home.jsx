@@ -1,5 +1,5 @@
 import React from 'react'
-import meImage from './../img/development-23.webp'
+import homeIMG from './../img/home.webp'
 import { BsGithub,BsLinkedin,BsFacebook,BsWhatsapp } from 'react-icons/bs'
 import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
@@ -35,20 +35,20 @@ function Home() {
               />
             </div >
             <p className='text-2xl mt-6 lg:my-0 font-tertiary font-light'>
-              Me apasiona el desarrollo web y el desarrollo de sitios web modernos
+              Me apasiona el desarrollo web y la construcción de sitios modernos
             </p>
             <div className='flex lg:justify-start justify-center gap-7 lg:my-6 mt-6 mb-8'>
-              <a href='https://github.com/OsmarGilCusipuma' target='_blank'>
+              <a href='https://github.com/OsmarGilCusipuma' target='_blank' aria-label='GitHub'>
                 <BsGithub className='cursor-pointer onhover' size={32}></BsGithub>
               </a>
               <a href='https://www.linkedin.com/in/osmar-antony-gil-cusipuma-97097a262/' target='_blank'>
-                <BsLinkedin className='cursor-pointer onhover' size={32}></BsLinkedin>
+                <BsLinkedin className='cursor-pointer onhover' size={32} aria-label='Linkedin'></BsLinkedin>
               </a>
               <a href='https://www.facebook.com/antonygc2002/' target='_blank'>
-                <BsFacebook className='cursor-pointer onhover' size={32}></BsFacebook>
+                <BsFacebook className='cursor-pointer onhover' size={32} aria-label='Facebook'></BsFacebook>
               </a>
               <a href='https://wa.link/1ayc0i' target='_blank'>
-                <BsWhatsapp className='cursor-pointer onhover' size={32}></BsWhatsapp>
+                <BsWhatsapp className='cursor-pointer onhover' size={32} aria-label='Whatsapp'></BsWhatsapp>
               </a>
             </div>
             <div className='flex lg:justify-start justify-center items-center lg:gap-8 gap-6'>
@@ -59,7 +59,7 @@ function Home() {
             </div>
           </motion.div>
         </div>
-        <motion.img variants={fade("down", 1)} initial={"init"} whileInView={"view"} className='hidden lg:flex' src={meImage} alt='Yo'></motion.img>
+        <motion.img variants={fade("down", 1)} initial={"init"} whileInView={"view"} className='hidden lg:flex' src={homeIMG} alt='Antony Dev'></motion.img>
       </div>
     </div>
   )

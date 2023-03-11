@@ -5,7 +5,7 @@ import { fade } from '../utils/variants'
 function Contact() {
   return (
     <div className='section' id='contact'>
-      <div className='container mx-auto max-w-[1200px] max-h-full'>
+      <div className='container mx-auto max-w-[1200px]'>
         <div className='flex lg:flex-row flex-col justify-center items-center gap-[40px]'>          <motion.div variants={fade("right", 1)} initial={"init"} whileInView={"view"} className='flex-1'>
             <p className='font-secondary font-bold text-[#C637A0] lg:text-4xl text-3xl py-3'>Ponte en contacto</p>
             <h2 className='font-secondary text-6xl lg:text-8xl text-white'>Trabajemos juntos!</h2>
