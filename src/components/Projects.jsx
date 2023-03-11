@@ -39,18 +39,18 @@ function Projects() {
     <div className='section' id='projects'>
       <div className='container mx-auto max-w-[1200px]'>
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-10'>
-          <motion.div variants={fade("right", 1.1)} initial={"init"} whileInView={"view"}>
-            <h2 className='font-primary text-[#9b33cc] text-4xl uppercase'>My latest works</h2>
-            <p className='font-secondary text-xl text-white py-4 max-w-[75%]'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <motion.div className='text-center lg:text-left max-w-[400px] mx-auto' variants={fade("right", 1.1)} initial={"init"} whileInView={"view"}>
+            <h2 className='font-primary text-[#9b33cc] text-4xl uppercase'>Mis últimos proyectos</h2>
+            <p className='font-secondary text-lg text-white py-4'>Páginas web construidas como práctica de las bases del desarrollo web front-end</p>
             <a href='https://github.com/OsmarGilCusipuma' target='_blank' className='inline-block'>
-              <button className='btn font-tertiary gradient lg:mt-[50px]'>Check all my projects</button>
+              <button className='btn font-tertiary gradient'>Revisa todos mis proyectos</button>
             </a>
           </motion.div>
 
           {
             effect.map((img,index) => (
-              <motion.div key={index} variants={fade(animationDir[index].dir, animationDir[index].speed)} initial={"init"} whileInView={"view"} className='relative'>
-                <div className='overflow-hidden border border-slate-300 rounded-[20px]'>
+              <motion.div key={index} variants={fade(animationDir[index].dir, animationDir[index].speed)} initial={"init"} whileInView={"view"} className='relative max-w-[450px] mx-auto'>
+                <div className='overflow-hidden border-2 border-[#2B125A] rounded-[20px]'>
                   <img className='hover:brightness-[.3] transition-all hover:scale-[1.15] rounded-[20px]' src={`/src/img/project${index+1}.webp`} onMouseOver={()=> handleChangeOver(index)} onMouseOut={()=> handleChangeOut(index)}>
                   </img>
                 </div>
